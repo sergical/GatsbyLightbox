@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "gatsby-lightbox-example",
+  "description": "Gatsby lightbox example",
+  "version": "2.0.0",
+  "author": "Sergiy Dybskiy <hey@416serg.me>",
   "dependencies": {
     "@reach/dialog": "^0.1.2",
     "babel-plugin-styled-components": "^1.8.0",
@@ -41,6 +41,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/416serg/GatsbyLightbox"
   }
 }
