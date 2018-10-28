@@ -1,5 +1,6 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Lightbox from './lightbox';
 
 const Cars = () => (
   <StaticQuery
@@ -18,7 +19,7 @@ const Cars = () => (
         }
       }
     `}
-    render={data => console.log(data) || <div>Images</div>}
+    render={data => <Lightbox carImages={data.carImages.edges} />}
   />
-)
-export default Cars
+);
+export default Cars;

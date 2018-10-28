@@ -4,24 +4,26 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-eslint',
+    'gatsby-plugin-styled-components',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `cars`,
+        name: 'cars',
         path: `${__dirname}/src/cars`,
       },
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'gatsby-starter-default',
         short_name: 'starter',
@@ -34,4 +36,4 @@ module.exports = {
     },
     'gatsby-plugin-offline',
   ],
-}
+};
